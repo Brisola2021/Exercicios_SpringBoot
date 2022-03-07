@@ -29,7 +29,7 @@ public class UsuarioController {
 	private UsuarioService usuarioService;
 	
 	@Autowired
-	private UsuarioRepository usuarioRepository;
+	private UsuarioRepository userRepository;
 	
 	@PostMapping("/logar")
 	public ResponseEntity<UsuarioLogin> Autentication(@RequestBody Optional<UsuarioLogin> user) {
@@ -46,7 +46,7 @@ public class UsuarioController {
 	
 	@GetMapping("/all") 
 		public ResponseEntity <List<Usuario>> getAll(){
-		return ResponseEntity.ok(usuarioRepository.findAll());
+		return ResponseEntity.ok(userRepository.findAll());
 		
 	}
 	
