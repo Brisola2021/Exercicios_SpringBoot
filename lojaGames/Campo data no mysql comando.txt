@@ -1,0 +1,2 @@
+INSERT INTO `lojagames`.`categoria`(`date`,`genero`, `texto`)
+VALUES ('2016-04-29 00:00:00', 'RPG', 'Cheguei');
