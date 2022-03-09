@@ -1,5 +1,7 @@
 package org.generation.blogPessoal.model;
 
+
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -70,6 +72,14 @@ public class Usuario {
 		this.senha = senha;
 	}
 
+	public Usuario (long id, String nome, String usuario, String senha, String foto) {
+	this.id = id;
+	this.nome = nome;
+	this.usuario = usuario;
+	this.senha = senha;
+	this.foto = foto;
+	}
 	
-	
+	public Usuario() {}
+		
 }
